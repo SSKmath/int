@@ -11,7 +11,18 @@
         <img src="img.jpg" alt="img">
     </button>
     <div class="entrance">
-        
+        <form action="/registration/registration.php" method="post">
+            <label for="username">Придумайте имя:</label>
+            <input type="text" class="username" name="username" maxlength="20">
+            <br>
+            <label for="password">Придумайте пароль:</label>
+            <input type="password" class="password" name="password" maxlength="20">
+            <br>
+            <label for="repitpassword">Повторите пароль:</label>
+            <input type="password" class="repitpassword" name="repitpassword" maxlength="20">
+            <br>
+            <button type="submit" class="submit">Готово</button>
+        </form>
     </div>
 </body>
 
