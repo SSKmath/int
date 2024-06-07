@@ -3,75 +3,14 @@
 
 <head>
     <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <label for="i1">Введите первое число:</label>
-    <input type="number" id="i1" name="i1" value="0">
-    <br>
-    <label for="i2">Введите второе число:</label>
-    <input type="number" id="i2" name="i2" value="0">
-    <br>
-    <label for="v">Выберите действие:</label>
-    <select id="v" name="v">
-        <option value="+" selected>+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-    </select>
-    <br>
-    <p>Результат:</p>
-    <p id="outRez">0</p>
-    <script>
-        document.getElementById("v").addEventListener("change", function()
-        {
-            var t = this.value;
-            var outRez = document.getElementById("outRez");
-            var i1 = parseFloat(document.getElementById("i1").value);
-            var i2 = parseFloat(document.getElementById("i2").value);
-            if (t === "+")
-                outRez.textContent = i1 + i2;
-            else if (t === "-")
-                outRez.textContent = i1 - i2;
-            else if (t === "*")
-                outRez.textContent = i1 * i2;
-            else if (t === "/")
-                outRez.textContent = i1 / i2;
-        }
-        )
-        document.getElementById("i1").addEventListener("change", function()
-        {
-            var t = document.getElementById("v").value;
-            var outRez = document.getElementById("outRez");
-            var i1 = parseFloat(document.getElementById("i1").value);
-            var i2 = parseFloat(document.getElementById("i2").value);
-            if (t === "+")
-                outRez.textContent = i1 + i2;
-            else if (t === "-")
-                outRez.textContent = i1 - i2;
-            else if (t === "*")
-                outRez.textContent = i1 * i2;
-            else if (t === "/")
-                outRez.textContent = i1 / i2;
-        }
-        )
-        document.getElementById("i2").addEventListener("change", function()
-        {
-            var t = document.getElementById("v").value;
-            var outRez = document.getElementById("outRez");
-            var i1 = parseFloat(document.getElementById("i1").value);
-            var i2 = parseFloat(document.getElementById("i2").value);
-            if (t === "+")
-                outRez.textContent = i1 + i2;
-            else if (t === "-")
-                outRez.textContent = i1 - i2;
-            else if (t === "*")
-                outRez.textContent = i1 * i2;
-            else if (t === "/")
-                outRez.textContent = i1 / i2;
-        }
-        )
-    </script>
+    <div class="first">
+        <button class="button1" onclick="document.location='entrance/index.html'">Войти</button>
+        <button class="button2" onclick="document.location='registration/index.html'">Разегистрироваться</button>
+    </div>
 </body>
 
 </html>
