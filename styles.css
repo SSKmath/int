@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    display: flex;
+    display: flex; /* Горизонтальное расположение по умолчанию */
     width: 100%;
     max-width: 800px; /* Максимальная ширина для контейнера */
 }
