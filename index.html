@@ -9,16 +9,17 @@
 <body>
     <div class="container">
         <div class="section">
-            <h1>Введите текст, который хотите зашифровать</h1>
-            <input type="text" id="textInput1" placeholder="Введите текст здесь">
-            <button id="convertButton1">Преобразовать в КАПС</button>
+            <h2>Введите текст, <br>который хотите зашифровать</h2>
+            <textarea id="textarea1"></textarea>
+            <button id="convertButton1">Зашифровать</button>
             <h2 id="outputText1"></h2>
+            <textarea readonly id="textarea3"></textarea>
         </div>
         <div class="section">
-            <h1>Введите зашифрованный текст</h1>
-            <input type="text" id="textInput2" placeholder="Введите текст здесь">
-            <button id="convertButton2">Преобразовать в КАПС</button>
-            <h2 id="outputText2"></h2>
+            <h2>Введите зашифрованный текст, который хотите расшифровать</h2>
+            <textarea id="textarea2"></textarea>
+            <button id="convertButton2">Расшифровать</button>
+            <textarea readonly id="textarea4"></textarea>
         </div>
     </div>
     <script src="script.js"></script>
