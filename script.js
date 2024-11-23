@@ -1,10 +1,11 @@
-document.getElementById('convertButton').addEventListener('click', function() {
-    // Получаем текст из поля ввода
-    const inputText = document.getElementById('textInput').value;
-
-    // Преобразуем текст в верхний регистр
+document.getElementById('convertButton1').addEventListener('click', function() {
+    const inputText = document.getElementById('textInput1').value;
     const upperCaseText = inputText.toUpperCase();
+    document.getElementById('outputText1').innerText = upperCaseText;
+});
 
-    // Выводим результат на экран
-    document.getElementById('outputText').innerText = upperCaseText;
+document.getElementById('convertButton2').addEventListener('click', function() {
+    const inputText = document.getElementById('textInput2').value;
+    const upperCaseText = inputText.toUpperCase();
+    document.getElementById('outputText2').innerText = upperCaseText;
 });
