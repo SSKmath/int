@@ -1,0 +1,288 @@
+body {
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    background-color: #f0f4f8;
+    width: 100%;
+    height: 8vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loginName {
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8;
+    width: 100%;
+    flex-grow: 1;
+    /*padding: 20px;*/
+}
+
+.container {
+    max-width: 550px;
+}
+
+#chatContainer {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    #chatContainer {
+        width: 99%;
+    }
+}
+
+h2 {
+    align-self: center;
+    margin: 5px 0px;
+}
+
+#windowRegistration, #windowLogin {
+    display: none;
+}
+
+#closeReg, #closeLogin {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#errorReg, #errorLogin {
+    color: red;
+    font-size: 20px;
+}
+
+input {
+    width: 220px;
+    height: 37px;
+    padding: 8px;
+    margin: 2px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#headerMain, #goMainPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    min-width: 220px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    word-wrap: break-word; /* Обеспечивает перенос длинных слов */
+    white-space: pre-wrap; /* Сохраняет пробелы и переносы строк */
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.message strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.message span {
+    display: block;
+    color: #555;
+}
+
+.message div {
+    font-size: 0.8em;
+    color: #999;
+    text-align: right;
+}
+
+.input-group {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipient-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 60%;
+}
+
+#recipient {
+    flex: 1;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.toggle-button, .clear-button {
+    position: absolute;
+    right: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.toggle-button {
+    right: 5px;
+}
+
+.clear-button {
+    right: 35px;
+    display: none; /* Скрыта по умолчанию */
+}
+
+.friends-list {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.friends-list input {
+    width: 95%;
+    padding: 8px;
+    margin: 5px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.friends-list div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.friends-list div:hover {
+    background-color: #f0f0f0;
+}
+
+.next-button {
+    font-size: 0.8em; /* Размер шрифта меньше стандартного */
+    padding: 2px 5px; /* Уменьшенные отступы */
+    border: 1px solid #ccc; /* Тонкая рамка */
+    border-radius: 3px; /* Скругленные углы */
+    background-color: #f0f0f0; /* Светлый фон */
+    color: #333; /* Цвет текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.2s; /* Плавный переход цвета фона */
+}
+
+#chatContainer {
+    padding-top: 0px;
+}
+
+.tab-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px; /* Отступ между вкладками и контейнером */
+}
+
+.tab-button {
+    color: black;
+    flex: 1; /* Занимает равное пространство */
+    padding: 10px;
+    border: none;
+    background-color: #eee; /* Серый фон для неактивной вкладки */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.tab-button.active {
+    background-color: white; /* Белый фон для активной вкладки */
+    font-weight: bold; /* Выделение активной вкладки */
+}
+
+.tab-button:hover {
+    background-color: #ddd; /* Светло-серый фон при наведении */
+}
+
+#main-div-messages, #main-div-groups {
+    width: 100%;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.page1-header {
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: center;*/
+}
+
+#groupList {
+    padding: 0px;
+}
+
+.element-group-list {
+    word-wrap: break-word; /* Обеспечивает перенос длинных слов */
+    white-space: pre-wrap; /* Сохраняет пробелы и переносы строк */
+    border-top: 2px solid #f1f1f1;
+    border-bottom: 2px solid #f1f1f1;
+    /*
+    border-color: #f1f1f1;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px;*/
+}
+
+.element-group-list strong {
+    display: block;
+    margin: 5px;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.page3-header {
+    width: 100%;
+    display: flex;
+}
+
+.page3-header h2 {
+    max-width: 85%; /* Ограничивает ширину заголовка */
+    word-wrap: break-word; /* Позволяет переносить длинные слова */
+    white-space: pre-wrap;
+}

@@ -14,6 +14,12 @@ body {
     margin: 0px;    
 }
 
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+}
+
 .container {
     max-width: 600px;
     display: flex;
@@ -43,14 +49,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-.cypher {
-    align-self: flex-start;
-}
-
-.bezu {
-    align-self: flex-start;
-}
-
 textarea {
     resize: none;
     padding: 8px;
@@ -61,62 +59,4 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-h2 {
-    align-self: flex-start;
-}
-
-.key {
-    height: 37px;
-}
-
-.changeButtonDiv {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    
-}
-
-.changeButton {
-    background-color: transparent;
-    color: transparent;
-    transition: background-color 1s;
-    margin: 0px;
-    padding: 0px 0px;
-
-    width: 7vh;
-    height: 7vh;
-    background-image: url('cypher/change.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.changeButton:hover {
-    background-color: #f0f4f8;
-}
-
-p {
-    font-family: 'Roboto', sans-serif; /* Шрифт */
-    font-size: 18px; /* Размер шрифта */
-    color: #2a2a2a; /* Цвет текста */
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-.error-message {
-    color: red;
-    font-size: 20px;
-}
-
-@media (max-width: 600px) {
-    body {
-        flex-direction: column;
-    }
-
-    .changeButton {
-        width: 11vw;
-        height: 11vw;
-    }
 }

@@ -1,0 +1,39 @@
+#newMod {
+    display: none;
+}
+
+#newButtonsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.key {
+    height: 37px;
+}
+
+.changeButtonDiv {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+.changeButton {
+    background-color: transparent;
+    color: transparent;
+    transition: background-color 1s;
+    margin: 0px;
+    padding: 0px 0px;
+
+    width: 7vh;
+    height: 7vh;
+    background-image: url('change.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.changeButton:hover {
+    background-color: #f0f4f8;
+}

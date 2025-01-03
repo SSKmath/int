@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+    padding: 15px;
+    width: calc(100% - 20px);
+    height: 100px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.key {
+    height: 51px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-top: 600px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px; /* Отступы для мобильной версии */
+    }
+}

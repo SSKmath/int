@@ -1,0 +1,114 @@
+body {
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    background-color: #f0f4f8;
+    width: 100vw;
+    height: 8vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8;
+    width: 100vw;
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 550px;
+}
+
+#chatContainer {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    #chatContainer {
+        width: 99%;
+    }
+}
+
+h2 {
+    align-self: center;
+    margin: 5px 0px;
+}
+
+#windowRegistration, #windowLogin {
+    display: none;
+}
+
+#closeReg, #closeLogin {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#errorReg, #errorLogin {
+    color: red;
+    font-size: 20px;
+}
+
+input {
+    width: 220px;
+    height: 37px;
+    padding: 8px;
+    margin: 2px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#headerMain, #goMainPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages {
+    height: 350px;
+    min-width: 220px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    word-wrap: break-word; /* Обеспечивает перенос длинных слов */
+    white-space: pre-wrap; /* Сохраняет пробелы и переносы строк */
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.message strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.message span {
+    display: block;
+    color: #555;
+}
+
+.message div {
+    font-size: 0.8em;
+    color: #999;
+    text-align: right;
+}
